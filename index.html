@@ -8,6 +8,10 @@
     <title>Cyberplant</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -60,7 +64,7 @@
 
         </div>
         <div id="picright">
-            <img class="pictures" src="pic/2.png" alt="bomb">
+            <img class="pictures" src="pic/lighty.png" alt="bomb">
         </div>
 
         <img class="ranke" src="pic/vine.png" alt="vine">
@@ -94,11 +98,11 @@
 
         </div>
         <div>
-            <img id="picleft" class="pictures" src="pic/2.png" alt="bomb">
+            <img id="picleft" class="pictures" src="pic/plantrg.png" alt="bomb">
         </div>
 
         <div>
-        <img class="ranke" id="ranke2" src="pic/vine.png" alt="vine">
+            <img class="ranke" id="ranke2" src="pic/vine.png" alt="vine">
         </div>
         <img src="pic/backgroundgreen.png" alt="bg">
 
@@ -128,7 +132,7 @@
             </p>
 
         </div>
-        <img class="pictures" id="plant4" src="pic/ahornblatt.png" alt="ahorn">
+        <img class="pictures" id="plant4" src="pic/ahornblattbrowncreep2.png" alt="ahorn">
 
         <div class="dreieck"></div>
         <img src="pic/monstera2.png" alt="bg">
@@ -185,38 +189,44 @@
 
         <div>
             <h1 id="medienfont"> MEDIEN</h1>
-            <div id="dreiecku" class="dreieck"></div>
+            <div id="dreiecku" class="dreieck">
+            </div>
 
         </div>
 
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="pic/plantrg.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="pic/plant1.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="pic/fancy.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="pic/creepy.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="pic/lighty2.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="pic/blue.png" />
+                </div>
+            </div>
 
 
 
 
-
-        <p><code>wrapAround: true</code></p>
-
-        <!-- Flickity HTML init -->
-        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
+            <img src="pic/black.png" alt="bg">
         </div>
-
-
-        <!--
-        <div id="scrollbox">
-            <div class="mediengrau"></div>
-            <div class="mediengrau"></div>
-            <div class="mediengrau"></div>
-            <div class="mediengrau"></div>
-            <div class="mediengrau"></div>
-        </div>
-    -->
-
-        <img src="pic/black.png" alt="bg">
     </div>
 
     <!-- Seite7-->
@@ -224,6 +234,12 @@
 
 
         <div id="dreieckbig" class="dreieck"></div>
+
+        <form>
+            <label for="email">E-Mail-Adresse:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Absenden">
+        </form>
 
         <img src="pic/bgleaves3.png" alt="bg">
     </div>
