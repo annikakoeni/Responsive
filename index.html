@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyberplant</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
 
-
+    <!-- Seite1-->
 
     <div class="background" id="b1">
 
@@ -22,7 +23,7 @@
 
         <div id="blattblock">
             <figure>
-                <p class="font" id="Blatttext1"> ERLEBE PFLANZEN DER NÄCHSTEN GENERATION</p>
+                <h2 id="Blatttext1"> ERLEBE PFLANZEN DER NÄCHSTEN GENERATION</h2>
                 <div class="font" id="SYMBIOSE">SYMBIOSE</div>
                 <img id="plant1" src="pic/plant_1.png" alt="fancyplant">
                 <div class="font" id="UPDATE">UPDATE</div>
@@ -36,9 +37,10 @@
 
     </div>
 
+    <!-- Seite2-->
 
     <div class="background" id="b2">
-        <img src="pic/yellow2.png" alt="bg">
+
 
         <div>
             <h1>DAS SYMBIOSE_UPDATE IST DA</h1>
@@ -48,7 +50,7 @@
 
             <h2>WAS GIBTS NEUES IM SYMBIOSE UPDATE?</h2>
 
-            <p class="font" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            <p class="font">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                 dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -57,23 +59,22 @@
                 dolor sit amet. </p>
 
         </div>
-        <div>
+        <div id="picright">
             <img class="pictures" src="pic/2.png" alt="bomb">
         </div>
 
-        <div class="ranke">
-            <img src="pic/vine.png" alt="vine">
+        <img class="ranke" src="pic/vine.png" alt="vine">
 
-        </div>
 
+        <img src="pic/yellow2.png" alt="bg">
     </div>
 
 
 
-
+    <!-- Seite3-->
 
     <div class="background" id="b3">
-        <img src="pic/backgroundgreen.png" alt="bg">
+
 
         <div>
             <h1>ERFAHRE MEHR</h1>
@@ -96,27 +97,134 @@
             <img id="picleft" class="pictures" src="pic/2.png" alt="bomb">
         </div>
 
-        <div class="ranke" id="ranke2">
-            <img src="pic/vine.png" alt="vine">
+        <div>
+        <img class="ranke" id="ranke2" src="pic/vine.png" alt="vine">
+        </div>
+        <img src="pic/backgroundgreen.png" alt="bg">
+
+    </div>
+
+    <!-- Seite4-->
+
+
+    <div class="background" id="b4">
+        <div id="symbox">
+
+            <h2>SYMBIOSE VERÄNDERT.ALLES</h2>
+
+            <p class="font">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam.. At vero eos et accusam et justo duo
+                dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. . At
+                vero
+                eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eir.
+            </p>
+
+        </div>
+        <img class="pictures" id="plant4" src="pic/ahornblatt.png" alt="ahorn">
+
+        <div class="dreieck"></div>
+        <img src="pic/monstera2.png" alt="bg">
+
+    </div>
+
+
+
+
+    <!-- Seite5-->
+
+    <div class="background" id="b5">
+        <div>
+            <h1 id="konfiu">ERSTELLE DEINE EIGENE PFLANZE</h1>
+            <div id="dreiecku" class="dreieck"></div>
+
+            <div id="generator" class="font">
+                <a class="button">FARBE</a>
+
+                <a class="button">FUNKTIONEN</a>
+
+                <a class="button">GRÖßE</a>
+
+                <a class="button">ART</a>
+
+                <a class="button">SYMBIOSE</a>
+
+            </div>
+
+            <div id="graubox">
+                <div class="platzhalter"></div>
+
+
+                <a id="d1" class="dreieck">
+                    <p class="style"> STYLE 1</p>
+                </a>
+
+                <a id="d2" class="dreieck">
+                    <p class="style"> STYLE 2</p>
+                </a>
+            </div>
+
+
+
+        </div>
+        <img src="pic/black.png" alt="bg">
+    </div>
+
+
+    <!-- Seite6-->
+
+
+    <div class="background" id="b6">
+
+        <div>
+            <h1 id="medienfont"> MEDIEN</h1>
+            <div id="dreiecku" class="dreieck"></div>
 
         </div>
 
-    </div>
-    </div>
 
-    <div class="background" id="b4">
-        <img src="pic/monstera2.png" alt="bg">
-    </div>
 
-    <div class="background" id="b5">
+
+
+
+        <p><code>wrapAround: true</code></p>
+
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+        </div>
+
+
+        <!--
+        <div id="scrollbox">
+            <div class="mediengrau"></div>
+            <div class="mediengrau"></div>
+            <div class="mediengrau"></div>
+            <div class="mediengrau"></div>
+            <div class="mediengrau"></div>
+        </div>
+    -->
+
         <img src="pic/black.png" alt="bg">
     </div>
 
-    <div class="background" id="b6">
-        <img src="pic/black.png" alt="bg">
-    </div>
-
+    <!-- Seite7-->
     <div class="background" id="b7">
+
+
+        <div id="dreieckbig" class="dreieck"></div>
+
         <img src="pic/bgleaves3.png" alt="bg">
     </div>
 
