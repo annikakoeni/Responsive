@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Cyberpunk;
+    src: url(font/Cyberpunk.ttf);
+}
+
+@font-face {
+    font-family: Cocogoose-Pro-Light;
+    src: url(font/Cocogoose_Pro_Light-trial.ttf);
+}
+
+@font-face {
+    font-family: Cocogoose-Pro-Semilight;
+    src: url(font/Cocogoose_Pro_Semilight-trial.ttf);
+}
+
 html {
     background-color: black;
     width: 100%;
@@ -13,17 +28,38 @@ html {
     position: relative;
     overflow: hidden;
     display: block;
+}
 
+#b1 {
+    background-image: url("pic/bgleaves.png");
+}
+
+#b2 {
+    background-image: url("pic/yellow2.png");
+}
+
+#b3 {
+    background-image: url("pic/backgroundgreen.png");
+}
+
+#b4 {
+    background-image: url("pic/monstera2.png");
+}
+
+#b5, #b6 {
+    background-color: black;
+}
+
+#b7 {
+    background-image: url("pic/bgleaves3.png");
 }
 
 
 #H1 {
 
     font-family: Cyberpunk;
-    src: url(font/Cyberpunk.ttf);
     color: yellow;
-    position: absolute;
-    left: 24%;
+    text-align: center;
     
     font-size: 100pt;
     width: auto;
@@ -67,8 +103,7 @@ figure {
 #Blatttext2 {
     text-align: center;
     margin-top: 3%;
-    font-family: Cocogoose_Pro_Semilight-trial;
-    src: url(font/Cocogoose_Pro_Semilight-trial.ttf);
+    font-family: Cocogoose-Pro-Semilight;
     font-size: 130%;
 }
 
@@ -76,8 +111,7 @@ figure {
     float: left;
     position: absolute;
     bottom: 35%;
-    font-family: Cocogoose_Pro_Semilight-trial;
-    src: url(font/Cocogoose_Pro_Semilight-trial.ttf);
+    font-family: Cocogoose-Pro-Semilight;
     font-size: 130%;
 }
 
@@ -89,23 +123,13 @@ figure {
     font-size: 130%;
 }
 
-@font-face {
-    font-family: Cocogoose_Pro_Light-trial;
-    src: url(font/Cocogoose_Pro_Light-trial.ttf);
-}
-
 .font {
-    font-family: Cocogoose_Pro_Light-trial;
+    font-family: Cocogoose-Pro-Light;
 
-}
-
-@font-face {
-    font-family: Cocogoose_Pro_Semilight-trial;
-    src: url(font/Cocogoose_Pro_Semilight-trial.ttf);
 }
 
 h2 {
-    font-family: Cocogoose_Pro_Light-trial;
+    font-family: Cocogoose-Pro-Light;
 }
 
 
@@ -124,8 +148,7 @@ h2 {
 }
 
 h1 {
-    font-family: Cocogoose_Pro_Semilight-trial;
-    src: url(font/Cocogoose_Pro_Semilight-trial.ttf);
+    font-family: Cocogoose-Pro-Semilight;
     color: black;
     position: absolute;
     left: 15%;
@@ -319,21 +342,6 @@ h1 {
 
 }
 
-
-.dreieckbig {
-
-
-    border-top: 30px solid transparent;
-    /* skyblue */
-    border-bottom: 30px solid transparent;
-    /* orange; */
-    border-left: 1920px solid #FEFE00;
-
-    position: absolute;
-    top: 38.5%;
-
-}
-
 /*gallery*/
 
 
@@ -355,13 +363,43 @@ h1 {
 }
 
 
+.dreieckbig {
+    position: relative;
+    margin: 5% 0;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
 
 
+.fomular-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #707070;
+    border: solid;
+    height: 45%;
+    margin: 0 5%;
+}
 
-form {
-    width: 50%;
-    margin: 0 auto;
+.bold {
+    font-family: Cocogoose-Pro-Semilight;
+    font-size: 120%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    font-family: Cocogoose-Pro-Light;
 }
 
 label {
@@ -380,8 +418,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    width: 20%;
-    background-color: #0BBE37;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -391,41 +428,16 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0BBE37;
+    background-color: #45a049;
 }
 
-
-#dreieckbig2 {
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    /* skyblue */
-    border-right: 1920px solid #FEFE00;
-    /* limegreen;  */
-    border-bottom: 30px solid transparent;
-    /* orange; */
-
-    position: absolute;
-    top: 80%;
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    max-width: 600px;
 }
 
-@media (max-width: 1250px) {
-    #greydreieck {
-        width: 0;
-        height: 0;
-        border-left: 1000px solid transparent;
-        border-right: 1000px solid transparent;
-        border-bottom: 500px solid #707070;
-        position: absolute;
-    }
-  }
-  
-
-#greydreieck {
-    width: 0;
-    height: 0;
-    border-left: 1000px solid transparent;
-    border-right: 1000px solid transparent;
-    border-bottom: 500px solid #707070;
-    position: absolute;
+.checkbox > input {
+    margin-right: 5px;
 }
