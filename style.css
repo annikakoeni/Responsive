@@ -74,6 +74,7 @@ html {
     margin-right: auto;
     max-width: 100%;
     max-height: auto;
+    padding: 2%;
 
 
 }
@@ -83,7 +84,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    padding: 10%;
+    padding: 2%;
 }
 
 figure {
@@ -119,7 +120,7 @@ figure {
     float: right;
     position: absolute;
     bottom: 35%;
-    right: 35%;
+    right: 30%;
     font-size: 130%;
 }
 
@@ -156,7 +157,9 @@ h1 {
     font-size: 50pt;
     margin-top: 5%;
 }
-
+#erfahre{
+    left: 33%;
+}
 
 .pictures {
     display: block;
@@ -174,7 +177,7 @@ h1 {
 .ranke {
     display: block;
     margin-left: auto;
-    margin-top: 10%;
+    margin-top: 29%;
     right: -5%;
     width: 50%;
     position: absolute;
@@ -186,8 +189,8 @@ h1 {
 
 #ranke2 {
     rotate: -30deg;
-    right: 50%;
-    margin-top: 35%;
+    right: 50.2%;
+    margin-top: 36%;
 
 
 }
@@ -216,6 +219,7 @@ h1 {
 #plant4 {
 
     border: none;
+    top: 6%;
 }
 
 .dreieck {
@@ -440,4 +444,14 @@ input[type="submit"]:hover {
 
 .checkbox > input {
     margin-right: 5px;
+}
+.svgdreieck{
+    position: relative;
+    margin: 24.5% 0;
+   
+}
+.svgd2{
+    position: relative;
+    margin: 4.3% 0;
+
 }
