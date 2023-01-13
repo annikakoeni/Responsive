@@ -49,7 +49,7 @@
             <h1>DAS SYMBIOSE_UPDATE IST DA</h1>
 
         </div>
-        <div class="box">
+        <div id="boxleft" class="box">
 
             <h2>WAS GIBTS NEUES IM SYMBIOSE UPDATE?</h2>
 
@@ -62,8 +62,10 @@
                 dolor sit amet. </p>
 
         </div>
-        <div id="picright">
-            <img class="pictures" src="pic/lighty.png" alt="bomb">
+
+        
+        <div>
+            <img id="picright" class="pictures" src="pic/lighty.png" alt="bomb">
         </div>
 
         <img class="ranke" src="pic/vine.png" alt="vine">
@@ -160,15 +162,11 @@
             </svg>
 
             <div id="generator" class="font">
-                <a class="button">FARBE</a>
+                <button class="button" onclick="updateGenerator('farbe')">FARBE</button>
 
-                <a class="button">FUNKTIONEN</a>
+                <button class="button" onclick="updateGenerator('größe')">GRÖßE</button>
 
-                <a class="button">GRÖßE</a>
-
-                <a class="button">ART</a>
-
-                <a class="button">SYMBIOSE</a>
+                <button class="button" onclick="updateGenerator('art')">ART</button>
 
             </div>
 
