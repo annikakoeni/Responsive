@@ -564,7 +564,19 @@ select {
   p{
     font-size: 10pt;
   }
+  .right-left-todo-animation{
+    animation: none;
+  }
+  .left-right-todo-animation{
+    animation: none;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
   
+
+
 }
 
 .uppercase {
