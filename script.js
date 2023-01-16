@@ -121,8 +121,13 @@ function updateGenerator() {
   const groesse = document.getElementById("generator-groesse").value;
   const farbe = document.getElementById("generator-farbe").value;
   const bildName = `${art}-${groesse}-${farbe}.png`;
-  document.querySelector(".platzhalter").style.backgroundColor = "unset";
-  document.querySelector(
-    ".platzhalter"
-  ).style.backgroundImage = `url(./pic/${bildName})`;
+  const platzhalterContainer = document.querySelector(".platzhalter");
+
+  platzhalterContainer.style.backgroundColor = "unset";
+  platzhalterContainer.style.backgroundImage = `url(./pic/${bildName})`;
+
+  const platzhalterText = document.querySelector(".platzhalter > p");
+  if (platzhalterText) {
+    platzhalterContainer.removeChild(platzhalterText);
+  }
 }

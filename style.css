@@ -60,7 +60,7 @@ html {
   color: yellow;
   text-align: center;
 
-  font-size: 75pt;
+  font-size: 90pt;
   width: auto;
   text-shadow: 2px 2px 0px black;
 }
@@ -144,17 +144,14 @@ h2 {
 @keyframes left-right {
   0% {
     left: -40%;
-    top: 0px;
   }
 
   50% {
     left: 15%;
-    top: 0px;
   }
 
   100% {
     left: 5%;
-    top: 0px;
   }
 }
 
@@ -166,17 +163,14 @@ h2 {
 @keyframes right-left {
   0% {
     right: 40%;
-    top: 0px;
   }
 
   50% {
     right: 15%;
-    top: 0px;
   }
 
   100% {
     right: 5%;
-    top: 0px;
   }
 }
 
@@ -188,12 +182,10 @@ h2 {
 @keyframes left-right-todo {
   0% {
     left: 100%;
-    top: 0px;
   }
 
   100% {
     left: 5%;
-    top: 0px;
   }
 }
 
@@ -205,12 +197,10 @@ h2 {
 @keyframes right-left-todo {
   0% {
     right: 100%;
-    top: 0px;
   }
 
   100% {
     right: 5%;
-    top: 0px;
   }
 }
 
@@ -343,8 +333,6 @@ h1 {
 }
 
 #generator {
-
-
   display: flex;
   margin-top: 3%;
   position: relative;
@@ -352,22 +340,23 @@ h1 {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-
-
 }
-
 
 .platzhalter {
   display: flex;
   min-width: 1000px;
   height: 500px;
 
+  background-color: #707070;
   background-size: contain;
   background-repeat: no-repeat;
 
   align-items: center;
+  justify-content: center;
+}
 
-
+.platzhalter p {
+  color: white;
 }
 
 #plant-generator label {
@@ -380,7 +369,6 @@ select {
   border: none;
   border-radius: 1px;
   background-color: #0bbe37;
-
 }
 
 #d1 {
@@ -410,13 +398,12 @@ select {
   color: white;
 }
 
-
-
 #medienfont {
   color: #0bbe37;
   left: 0;
   top: -7%;
   z-index: 100;
+  text-align: left;
 }
 
 .mediengrau {
@@ -495,7 +482,6 @@ select {
   }
 
   #Blatttext1 {
-
     font-size: 10pt;
     margin-top: 5%;
   }
@@ -521,14 +507,15 @@ select {
   #b3,
   #b4,
   #b5,
-  #b6,
   #b7 {
     height: 667px;
+  }
+  #b6 {
+    height: 300px;
   }
 
   h1 {
     font-size: 15pt;
-
   }
 
   .pictures {
@@ -542,7 +529,6 @@ select {
   }
 
   #boxleft {
-
     left: unset;
   }
 
@@ -551,11 +537,16 @@ select {
     align-items: center;
     display: grid;
     margin-top: 55%;
-
   }
 
   #picright {
     right: unset;
+  }
+  .swiper {
+    height: unset;
+  }
+  .swiper-slide img {
+    width: 300px;
   }
 
   .left-right-animation {
@@ -564,7 +555,6 @@ select {
 
   h2 {
     font-size: 12pt;
-
   }
 
   p {
@@ -600,9 +590,7 @@ select {
     width: 90%;
     left: unset;
     margin-top: 85%;
-
   }
-
 
   .svgdreieck {
     margin: 95% 0 !important;
@@ -617,17 +605,18 @@ select {
   .platzhalter {
     min-width: 300px;
     height: 200px;
-   
   }
-  .svgd2{
+  #plant-generator label {
+    margin-right: unset;
+  }
+  .svgd2 {
     margin-top: -10% !important;
     left: -0.2%;
     width: 400px;
     height: 28px;
   }
-  #plant-generator{
+  #plant-generator {
     flex-direction: column !important;
-
   }
   /*
   input[type="submit"] {
@@ -636,25 +625,20 @@ select {
 
 
   }*/
-  select{
+  select {
     margin-bottom: 1rem;
+    margin-right: unset;
   }
 
   input[type="email"] {
-   font-size: 6.5pt;
-   padding: 8px 12px !important ;
-
+    font-size: 6.5pt;
+    padding: 8px 12px !important ;
+  }
 }
 
-
-
-}
-
-
-.dreieckbottom{
+.dreieckbottom {
   width: fit-content;
 }
-
 
 .uppercase {
   text-transform: uppercase;
@@ -698,14 +682,12 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-
 #plant-generator {
   display: flex;
   flex-direction: row;
 
   align-items: center;
   margin-bottom: 10%;
-
 }
 
 input[type="submit"]:hover {
@@ -719,7 +701,7 @@ input[type="submit"]:hover {
   max-width: 600px;
 }
 
-.checkbox>input {
+.checkbox > input {
   margin-right: 5px;
 }
 
