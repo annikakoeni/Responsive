@@ -118,20 +118,27 @@ Alle Pflanzen sind selbstversorgend, jeder Status kann in der CYBERPLANT.APP abg
       <svg class="svgd2" xmlns="http://www.w3.org/2000/svg" width="1000" height="15" viewBox="0 0 1000 15" fill="none">
         <path d="M1000 7.5L0.25 14.8612V0.138784L1000 7.5Z" fill="#FEFE00" />
       </svg>
+      
+     
 
       <div id="generator" class="font">
+
+       
+          <div class="platzhalter"></div>
+        
+
         <form action="javascript:updateGenerator()" id="plant-generator">
-          <label for=art">Art</label>
+          <label for="art" class="konfiname uppercase">Art</label>
           <select id="generator-art">
-              <option value="" selected="selected" hidden="hidden">Choose here</option>
+              <option value="" selected="selected_art" hidden="hidden">Wähle aus</option>
             <option value="Cinerea">Cinerea
             </option>
             <option value="Salix">Salix
             </option>
           </select>
-          <label for=farbe">Farbe</label>
+          <label for="farbe" class="konfiname uppercase">Farbe </label>
           <select id="generator-farbe">
-              <option value="" selected="selected n00b" hidden="hidden">Choose here yo</option>
+              <option value="" selected="selected_farbe" hidden="hidden">Wähle aus</option>
               <option value="weiss">Weiß
             </option>
             <option value="blau">Blau
@@ -141,9 +148,9 @@ Alle Pflanzen sind selbstversorgend, jeder Status kann in der CYBERPLANT.APP abg
             <option value="lila">Lila
             </option>
           </select>
-          <label for=groesse">Größe</label>
+          <label for="groesse" class="konfiname uppercase">Größe</label>
           <select id="generator-groesse">
-              <option value="" selected="selected yo" hidden="hidden">Choose here n00b</option>
+              <option value="" selected="selected_groesse" hidden="hidden">Wähle aus</option>
             <option value="klein">Klein
             </option>
             <option value="gross">Groß
@@ -153,9 +160,7 @@ Alle Pflanzen sind selbstversorgend, jeder Status kann in der CYBERPLANT.APP abg
         </form>
       </div>
 
-      <div id="graubox">
-        <div class="platzhalter"></div>
-      </div>
+      
     </div>
   </div>
 

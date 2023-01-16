@@ -21,12 +21,33 @@ window.addEventListener(
 
     const generator = document.querySelector("#plant-generator");
     generator.addEventListener("change", function (event) {
-      console.log("event.target.value", event.target.value);
+      const artenFarben = {
+        Cinerea: ["blau", "weiss"],
+        Salix: ["gruen", "lila"]
+      };
+
+      const options = document.querySelector("#generator-farbe").options;
+
       switch (event.target.value) {
         case "Cinerea":
-          console.log(document.querySelector("#generator-farbe"));
+          for (const option of options) {
+            console.log(option);
+            if (!artenFarben["Cinerea"].includes(option.value)) {
+              option.disabled = true;
+            } else {
+              option.disabled = false;
+            }
+          }
           break;
         case "Salix":
+          for (const option of options) {
+            if (!artenFarben["Salix"].includes(option.value)) {
+              option.disabled = true;
+            } else {
+              option.disabled = false;
+            }
+          }
+          break;
         default:
           break;
       }
@@ -105,6 +126,3 @@ function updateGenerator() {
     ".platzhalter"
   ).style.backgroundImage = `url(./pic/${bildName})`;
 }
-
-// chinera - blau weiß
-// salix - grün lila

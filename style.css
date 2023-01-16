@@ -312,7 +312,10 @@
     left: 0%;
     margin-top: 0%;
     padding-left: 5%;
-    padding-right: 15%;
+    padding-right: 5%;
+  }
+  .konfiname{
+    color: white;
   }
   
   #dreiecku {
@@ -341,21 +344,43 @@
   }
   
   #generator {
-    flex: auto;
-    position: absolute;
+   
+   
     display: flex;
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    top: 15%;
+    gap: 2rem;
+
+    
   }
+
   
   .platzhalter {
-    right: 10%;
-    width: 100%;
-    height: 100%;
-    top: 18%;
+    display: flex;
+    min-width: 1000px;
+    height: 500px;
+   
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
+  
+    align-items: center;
+    
+    
+  }
+  #plant-generator label{
+    margin-right: 0.5rem;
+  }
+
+  select{
+    margin-right: 1rem;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 1px;
+    background-color: #0bbe37;  
+    
   }
   
   #d1 {
@@ -385,13 +410,7 @@
     color: white;
   }
   
-  #graubox {
-    position: absolute;
-    right: 10%;
-    width: 50%;
-    height: 45%;
-    top: 18%;
-  }
+
   
   #medienfont {
     color: #0bbe37;
@@ -467,7 +486,30 @@
     .formular {
       margin-top: unset;
     }
+    #H1{
+      font-size: 30pt;
+      margin-top: 5%;
+    }
+    #Blatttext1 {
+     
+      font-size: 10pt;
   }
+
+  #SYMBIOSE{
+    font-size: 10pt;
+  }
+
+  #UPDATE{
+    font-size: 10pt;
+  }
+  #Blatttext2 {
+    font-size: 10pt;
+  }
+  #b1{
+    height: 450px;
+
+  }
+}
   
   .uppercase {
     text-transform: uppercase;
@@ -483,7 +525,6 @@
   }
   label {
     display: block;
-    margin-bottom: 8px;
     font-size: 18px;
   }
   
@@ -500,7 +541,6 @@
   
   input[type="submit"] {
     background-color: #fefe00;
-    color: black;
     padding: 10px 25px;
     border-radius: 1px;
     margin: 8px 0;
@@ -509,6 +549,16 @@
     cursor: pointer;
   }
   
+
+  #plant-generator{
+display: flex;
+flex-direction: row;
+
+align-items: center;  
+margin-bottom: 10%
+;
+
+  }
   input[type="submit"]:hover {
     background-color: #0bbe37;
   }
