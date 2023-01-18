@@ -513,10 +513,10 @@ select {
 }
 
 #b6 {
-  height: 300px;
+  height: 380px;
 }
 #b7{
-  height: 600px;
+  height: 550px;
 }
 
 h1 {
@@ -645,7 +645,7 @@ p{
   margin-bottom: -1%;
 }
 .news{
-  font-size: 60%;
+  font-size: 65% !important;
 }
 }
 
