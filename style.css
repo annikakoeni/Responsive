@@ -641,6 +641,12 @@ input[type="email"] {
 p{
   font-size: 8pt;
 }
+.erster{
+  margin-bottom: -1%;
+}
+.news{
+  font-size: 60%;
+}
 }
 
 
